@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/ll_izmenaSifre"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView android:text="ŠIFRA:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"></TextView>
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mojaZuta"
+                android:id="@+id/izmenaSifre_sifra"></EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="NOVA ŠIFRA:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"></TextView>
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mojaZuta"
+                android:id="@+id/izmenaSifre_novaSifra1"></EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="NOVA ŠIFRA:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"></TextView>
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mojaZuta"
+                android:id="@+id/izmenaSifre_novaSifra2"></EditText>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="IZMENI ŠIFRU"
+        android:textColor="@color/white"
+        android:background="@color/statusBarColor"
+        android:onClick="izmeniSifru"></Button>
+</LinearLayout>

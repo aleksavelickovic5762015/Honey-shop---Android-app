@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/ll_podaci">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+        <TableRow>
+            <TextView
+                android:id="@+id/podaci_ime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="20sp">
+            </TextView>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/podaci_prezime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="20sp" >
+            </TextView>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/podaci_adresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="20sp" >
+            </TextView>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/podaci_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="20sp" >
+            </TextView>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/podaci_mejl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="20dp" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <!--<Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="MOJE NARUDZBINE"
+        android:textColor="@color/mojaZuta"
+        android:textSize="18sp"
+        android:background="@android:color/transparent"
+        android:onClick="podaciNarudzbine"></Button>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="IZMENA PODATAKA"
+        android:textColor="@color/mojaZuta"
+        android:textSize="18sp"
+        android:onClick="izmenaPodataka"
+        android:clickable="true">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="PROMENA ŠIFRE"
+        android:textColor="@color/mojaZuta"
+        android:textSize="18sp"
+        android:onClick="promenaSifre"
+        android:clickable="true">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="MOJE NARUDZBINE"
+        android:textColor="@color/mojaZuta"
+        android:textSize="18sp"
+        android:onClick="podaciNarudzbine"
+        android:clickable="true">
+    </TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="ODJAVA"
+        android:textColor="@color/white"
+        android:background="@color/statusBarColor"
+        android:onClick="odjava"></Button>
+
+</LinearLayout>

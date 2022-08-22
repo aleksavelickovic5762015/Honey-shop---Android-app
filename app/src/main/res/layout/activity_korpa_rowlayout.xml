@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/korpa_slika"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp">
+    </ImageView>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/korpa_naziv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="18sp" >
+            </TextView>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/korpa_cena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="13sp" >
+            </TextView>
+        </TableRow>
+        <TableRow>
+            <!--
+            <TextView
+                android:id="@+id/korpa_kolicina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="13sp" >
+            </TextView>
+            -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/decrementButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="ukupanIznos"
+                    android:text="-"
+                    android:textSize="15sp"
+                    android:background="@color/statusBarColor"/>
+
+                <EditText
+                    android:id="@+id/korpa_kolicina"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/incrementButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="ukupanIznos"
+                    android:text="+"
+                    android:textSize="15sp"
+                    android:background="@color/statusBarColor"/>
+
+                <Button
+                    android:id="@+id/obrisiButton"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="OBRIŠI"
+                    android:textSize="15sp"
+                    android:background="@color/statusBarColor"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

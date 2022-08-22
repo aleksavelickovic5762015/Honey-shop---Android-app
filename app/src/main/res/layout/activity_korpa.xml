@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_korpa"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="17sp"
+        android:textColor="@color/mojaZuta"
+        android:id="@+id/korpa_ukupno">
+    </TextView>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:layout_width="135dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:text="NARUČI"
+                android:textColor="@color/white"
+                android:background="@color/statusBarColor"
+                android:onClick="porucivanje"></Button>
+            <Button
+                android:layout_width="135dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="50dp"
+                android:text="ISPRAZNI KORPU"
+                android:textColor="@color/white"
+                android:background="@color/statusBarColor"
+                android:onClick="isprazniKorpu"></Button>
+        </TableRow>
+    </TableLayout>
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_marginLeft="30dp"
+            android:text="ISPRAZNI KORPU"
+            android:textColor="@color/white"
+            android:background="@color/statusBarColor"
+            android:onClick="ispracniKorpu"></Button>
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_marginLeft="30dp"
+            android:text="NARUČI"
+            android:textColor="@color/white"
+            android:background="@color/statusBarColor"
+            android:onClick="porucivanje"></Button>
+    </LinearLayout>-->
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listview_korpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="6dp"/>
+</LinearLayout>

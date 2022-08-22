@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/ll_proizvod">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+        <TableRow>
+            <TextView
+                android:id="@+id/proizvod_naziv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="20dp"
+                android:textColor="@color/mojaZuta">
+            </TextView>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/proizvod_cena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="15dp" >
+            </TextView>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/proizvod_kategorija"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="15dp" >
+            </TextView>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/proizvod_opis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="15dp" >
+            </TextView>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/proizvod_nacinKoriscenja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="15dp" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/proizvod_slika"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+    </ImageView>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <!--
+        <TableRow
+            android:layout_width="150dp">
+            <Button
+                android:id="@+id/decrementButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:onClick="decrement"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/proizvod_kolicina"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/incrementButton"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:onClick="increment"
+                android:text="+"
+                android:textSize="15sp" />
+        </TableRow>
+        -->
+        <TableRow>
+            <Button
+                android:id="@+id/decrementButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="decrement"
+                android:text="-"
+                android:textSize="15sp"
+                android:background="@color/statusBarColor"/>
+
+            <EditText
+                android:id="@+id/proizvod_kolicina"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/incrementButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="increment"
+                android:text="+"
+                android:textSize="15sp"
+                android:background="@color/statusBarColor"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="DODAJ U KORPU"
+        android:textColor="@color/white"
+        android:background="@color/statusBarColor"
+        android:onClick="korpaDodaj"></Button>
+    <!--
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TableRow>
+            <ImageView
+                android:id="@+id/proizvod_slika"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp">
+            </ImageView>
+
+            <TableLayout>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/proizvod_naziv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/mojaZuta">
+                    </TextView>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/proizvod_cena"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textSize="15dp" >
+                    </TextView>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/proizvod_kategorija"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textSize="15dp" >
+                    </TextView>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/proizvod_opis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textSize="15dp" >
+                    </TextView>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/proizvod_nacinKoriscenja"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textSize="15dp" >
+                    </TextView>
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="150dp">
+            <Button
+                android:id="@+id/decrementButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:onClick="decrement"
+                android:text="-"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/proizvod_kolicina"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/incrementButton"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:onClick="increment"
+                android:text="+"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DODAJ U KORPU"
+                android:textColor="@color/white"
+                android:background="@color/statusBarColor"
+                android:onClick="korpaDodaj"></Button>
+        </TableRow>
+    </TableLayout>
+    -->
+</LinearLayout>

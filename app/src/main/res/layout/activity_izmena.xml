@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/ll_izmena"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView android:text="IME:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"></TextView>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mojaZuta"
+                android:id="@+id/izmena_ime"></EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="PREZIME:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"></TextView>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mojaZuta"
+                android:id="@+id/izmena_prezime"></EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="ADRESA:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"></TextView>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mojaZuta"
+                android:id="@+id/izmena_adresa"></EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="BR.TEL:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"></TextView>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mojaZuta"
+                android:id="@+id/izmena_tel"></EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="E-MEJL:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"></TextView>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mojaZuta"
+                android:id="@+id/izmena_mejl"></EditText>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="IZMENI"
+        android:textColor="@color/white"
+        android:background="@color/statusBarColor"
+        android:onClick="izmena"></Button>
+</LinearLayout>
