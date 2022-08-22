@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pcelarksakuca_android10">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ikonica4"
+        android:label="MEDENJACI"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--
+        android:theme="@style/Theme.PcelarksaKuca_Android10"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        -->
+        <activity android:name=".ProizvodiActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ProizvodActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PrijavaActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".RegistracijaActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PodaciActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".IzmenaActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".IzmenaSifreActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".KorpaActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".NarudzbineActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
